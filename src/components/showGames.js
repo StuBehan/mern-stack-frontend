@@ -45,13 +45,13 @@ class ShowGames extends Component {
           <div className="row">
             <div className="col-md-12">
               <br />
-              <h2 className="display-4 text-center">Games List</h2>
+              <Link to="/create-game" className="btn btn-outline-warning float-right">
+                + Add New Game
+              </Link>              
             </div>
 
             <div className="col-md-11">
-              <Link to="/create-game" className="btn btn-outline-warning float-right">
-                + Add New Game
-              </Link>
+              <h2 className="display-4 text-center">Games List</h2>
               <br />
               <br />
               <hr />

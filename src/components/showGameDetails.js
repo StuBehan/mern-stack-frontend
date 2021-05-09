@@ -53,37 +53,37 @@ class ShowGameDetails extends Component {
         </thead> */}
         <tbody>
           <tr>
-            <th scope="row">1</th>
+            <th scope="row"></th>
             <td>Title</td>
             <td>{ game.title }</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
+            <th scope="row"></th>
             <td>Developer</td>
             <td>{ game.developer }</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
+            <th scope="row"></th>
             <td>Producer</td>
             <td>{ game.producer }</td>
           </tr>
           <tr>
-            <th scope="row">4</th>
+            <th scope="row"></th>
             <td>Genre</td>
             <td>{ game.genre }</td>
           </tr>
           <tr>
-            <th scope="row">5</th>
+            <th scope="row"></th>
             <td>Operating System</td>
             <td>{ game.operatingSystem }</td>
           </tr>
           <tr>
-            <th scope="row">6</th>
+            <th scope="row"></th>
             <td>Date Relased</td>
             <td>{ game.dateReleased }</td>
           </tr>
           <tr>
-            <th scope="row">7</th>
+            <th scope="row"></th>
             <td>Cover Image</td>
             <td>{ game.coverImage }</td>
           </tr>
@@ -97,7 +97,7 @@ class ShowGameDetails extends Component {
           <div className="row">
             <div className="col-md-10 m-auto">
               <br /> <br />
-              <Link to="/" className="btn btn-outline-warning float-left">
+              <Link to="/" className="btn btn-outline-warning float-right">
                   Show Game List
               </Link>
             </div>

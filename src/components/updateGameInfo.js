@@ -12,7 +12,8 @@ class UpdateGameInfo extends Component {
       producer:'',
       genre:'',
       operatingSystem:'',
-      dateReleased:''
+      dateReleased:'',
+      coverImage:''
     };
   }
 
@@ -28,7 +29,8 @@ class UpdateGameInfo extends Component {
           producer: res.data.producer,
           genre: res.data.genre,
           operatingSystem: res.data.operatingSystem,
-          dateReleased: res.data.dateReleased
+          dateReleased: res.data.dateReleased,
+          coverImage: res.data.coverImage
         })
       })
       .catch(err => {
@@ -49,7 +51,8 @@ class UpdateGameInfo extends Component {
       producer: this.state.producer,
       genre: this.state.genre,
       operatingSystem: this.state.operatingSystem,
-      dateReleased: this.state.dateReleased
+      dateReleased: this.state.dateReleased,
+      coverImage: this.state.coverImage
     };
 
     axios
@@ -144,6 +147,7 @@ class UpdateGameInfo extends Component {
                 onChange={this.onChange}
               />
             </div>
+
             <div className='form-group'>
             <label htmlFor="dateReleased">Date Released</label>
               <input
@@ -152,6 +156,18 @@ class UpdateGameInfo extends Component {
                 name='dateReleased'
                 className='form-control'
                 value={this.state.dateReleased}
+                onChange={this.onChange}
+              />
+            </div>
+
+            <div className='form-group'>
+            <label htmlFor="coverImage">Cover Image (URL)</label>
+              <input
+                type='text'
+                placeholder='Cover Image for this Game'
+                name='coverImage'
+                className='form-control'
+                value={this.state.coverImage}
                 onChange={this.onChange}
               />
             </div>

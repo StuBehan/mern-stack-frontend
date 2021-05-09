@@ -7,7 +7,7 @@ const GameCard = (props) => {
 
     return(
         <div className="card-container">
-            <img src="https://www.mobygames.com/images/covers/l/632408-half-life-windows-front-cover.jpg" alt="" />
+            <img src={`${game.coverImage}`} alt="" width="500" height="600"/>
             <div className="desc">
                 <h2>
                     <Link to={`/show-game/${game._id}`}>

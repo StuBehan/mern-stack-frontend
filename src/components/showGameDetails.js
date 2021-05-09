@@ -82,6 +82,11 @@ class ShowGameDetails extends Component {
             <td>Date Relased</td>
             <td>{ game.dateReleased }</td>
           </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Cover Image</td>
+            <td>{ game.coverImage }</td>
+          </tr>
         </tbody>
       </table>
     </div>

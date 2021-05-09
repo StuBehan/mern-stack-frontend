@@ -13,7 +13,8 @@ class CreateGame extends Component {
       producer:'',
       genre:'',
       operatingSystem:'',
-      dateReleased:''
+      dateReleased:'',
+      coverImage:''
     };
   }
 
@@ -30,7 +31,8 @@ class CreateGame extends Component {
       producer: this.state.producer,
       genre: this.state.genre,
       operatingSystem: this.state.operatingSystem,
-      dateReleased: this.state.dateReleased
+      dateReleased: this.state.dateReleased,
+      coverImage: this.state.coverImage
     };
 
     axios
@@ -42,7 +44,8 @@ class CreateGame extends Component {
           producer:'',
           genre:'',
           operatingSystem:'',
-          dateReleased:''
+          dateReleased:'',
+          coverImage:''
         })
         this.props.history.push('/');
       })
@@ -131,6 +134,16 @@ class CreateGame extends Component {
                     name='dateReleased'
                     className='form-control'
                     value={this.state.dateReleased}
+                    onChange={this.onChange}
+                  />
+                </div>
+                <div className='form-group'>
+                  <input
+                    type='text'
+                    placeholder='Cover Image (URL)'
+                    name='coverImage'
+                    className='form-control'
+                    value={this.state.coverImage}
                     onChange={this.onChange}
                   />
                 </div>

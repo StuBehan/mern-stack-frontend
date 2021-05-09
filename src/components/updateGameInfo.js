@@ -7,7 +7,7 @@ class UpdateGameInfo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: '',
+      title:'',
       developer:'',
       producer:'',
       genre:'',

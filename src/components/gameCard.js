@@ -15,7 +15,7 @@ const GameCard = (props) => {
                     </Link>
                 </h2>
                 <h3>{game.developer}</h3>
-                <p>{game.dateReleased}</p>
+                <p>{game.dateReleased.slice(0,10)}</p>
             </div>
         </div>
     )

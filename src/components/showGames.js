@@ -49,16 +49,12 @@ class ShowGames extends Component {
                 + Add New Game
               </Link>              
             </div>
-
             <div className="col-md-11">
               <h2 className="display-4 text-center">Games List</h2>
               <br />
-              <br />
               <hr />
             </div>
-
           </div>
-
           <div className="list">
                 {gameList}
           </div>

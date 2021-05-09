@@ -13,9 +13,9 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path='/' component={ShowGames} />
-          <Route path='/create-book' component={CreateGame} />
-          <Route path='/edit-book/:id' component={UpdateGameInfo} />
-          <Route path='/show-book/:id' component={ShowGameDetails} />
+          <Route path='/create-game' component={CreateGame} />
+          <Route path='/edit-game/:id' component={UpdateGameInfo} />
+          <Route path='/show-game/:id' component={ShowGameDetails} />
         </div>
       </Router>
     );

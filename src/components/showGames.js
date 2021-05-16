@@ -56,7 +56,7 @@ class ShowGames extends Component {
             </div>
           </div>
           <div className="list">
-                {gameList}
+            {gameList}
           </div>
         </div>
       </div>
